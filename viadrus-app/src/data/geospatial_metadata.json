@@ -18,7 +18,7 @@
         "SAR": "+5.9%"
       },
       "predictability": "HIGH (10 days before)",
-      "report_file": "RAPORT_Predykcja_Wylewow_Brzeg.pdf",
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Predykcja_Wylewow_Brzeg.pdf",
       "leak_data": {
         "id": "leak_brzeg_flood_2025_06_05",
         "title": "Leak Analysis: #2 Overflow / Water Level Rise",
@@ -165,7 +165,7 @@
         "SAR": "+1.88"
       },
       "predictability": "HIGH (18 days before)",
-      "report_file": "RAPORT_Predykcja_Wylewow_Brzeg.pdf",
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Predykcja_Wylewow_Brzeg.pdf",
       "leak_data": {
         "id": "leak_brzeg_culmination_2025_05_26",
         "title": "Leak Analysis: #3 Spring Rise Culmination",
@@ -313,7 +313,7 @@
         "SAR": "+5.3%"
       },
       "predictability": "HIGH (10 days before)",
-      "report_file": "RAPORT_Predykcja_Wylewow_Siechnice.pdf",
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Predykcja_Wylewow_Siechnice.pdf",
       "leak_data": {
         "id": "leak_siechnice_overflow_2025_06_05",
         "title": "Leak Analysis: #1 Overflow / Terrain Inundation + Erosion",
@@ -460,7 +460,7 @@
         "NDVI": "-13%"
       },
       "predictability": "PARTIAL (48h before)",
-      "report_file": "RAPORT_Predykcja_Wylewow_Siechnice.pdf",
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Predykcja_Wylewow_Siechnice.pdf",
       "leak_data": {
         "id": "leak_siechnice_may_flood_2025_05_06",
         "title": "Leak Analysis: #4 Extensive Overflow — Floodplains",
@@ -607,7 +607,7 @@
         "SAR": "+6.1%"
       },
       "predictability": "HIGH (23 days before)",
-      "report_file": "RAPORT_Predykcja_Wylewow_Opole.pdf",
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Predykcja_Wylewow_Opole.pdf",
       "leak_data": {
         "id": "leak_opole_flood_2025_05_31",
         "title": "Leak Analysis: #1 May Overflow (Oder Rise)",
@@ -754,7 +754,7 @@
         "SAR": "+5.8%"
       },
       "predictability": "HIGH (8 days before)",
-      "report_file": "RAPORT_Predykcja_Wylewow_Opole.pdf",
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Predykcja_Wylewow_Opole.pdf",
       "leak_data": {
         "id": "leak_opole_flood_wave_2025_06_05",
         "title": "Leak Analysis: #2 Second Flood Wave",
@@ -901,7 +901,7 @@
         "SAR": "+9.9%"
       },
       "predictability": "HIGH (18 days before)",
-      "report_file": "RAPORT_Predykcja_Wylewow_Za_Opolem.pdf",
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Predykcja_Wylewow_Za_Opolem.pdf",
       "leak_data": {
         "id": "leak_za_opolem_first_wave_2025_05_26",
         "title": "Leak Analysis: #1 First Overflow Wave",
@@ -1048,7 +1048,7 @@
         "SAR": "+11.2%"
       },
       "predictability": "HIGH (10 days before)",
-      "report_file": "RAPORT_Predykcja_Wylewow_Za_Opolem.pdf",
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Predykcja_Wylewow_Za_Opolem.pdf",
       "leak_data": {
         "id": "leak_za_opolem_culmination_2025_06_05",
         "title": "Leak Analysis: #2 Massive Overflow Culmination",
@@ -1193,7 +1193,7 @@
         "STATUS": "DETECTED (1m resolution)"
       },
       "predictability": "EXPERIMENTAL",
-      "report_file": "RAPORT_Predykcja_Wylewow_Wroclaw.pdf",
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Predykcja_Wylewow_Wroclaw.pdf",
       "leak_data": {
         "id": "leak_wroclaw_sim_overflow",
         "title": "Leak Analysis: #5 Simulation: Local Urban Overflow",
@@ -1321,6 +1321,96 @@
           }
         ]
       }
+    },
+    {
+      "id": "brzeg_general",
+      "title": "General Analysis: Brzeg",
+      "location": {
+        "lat": 50.8607,
+        "lng": 17.4674
+      },
+      "date": "2025-06-10",
+      "priority": "MEDIUM",
+      "type": "FLOOD",
+      "description": "Comprehensive analysis of the hydrological situation in Brzeg during the June 2025 rise. Includes historical comparisons and risk assessment.",
+      "indices": {
+        "Status": "Stable",
+        "Last Update": "2025-06-10"
+      },
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Brzeg.pdf",
+      "is_general": true
+    },
+    {
+      "id": "opole_general",
+      "title": "General Analysis: Opole",
+      "location": {
+        "lat": 50.6751,
+        "lng": 17.9213
+      },
+      "date": "2025-06-10",
+      "priority": "MEDIUM",
+      "type": "FLOOD",
+      "description": "Comprehensive analysis of the hydrological situation in Opole during the June 2025 rise. Includes historical comparisons and risk assessment.",
+      "indices": {
+        "Status": "Stable",
+        "Last Update": "2025-06-10"
+      },
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Opole.pdf",
+      "is_general": true
+    },
+    {
+      "id": "siechnice_general",
+      "title": "General Analysis: Siechnice",
+      "location": {
+        "lat": 51.03,
+        "lng": 17.15
+      },
+      "date": "2025-06-10",
+      "priority": "MEDIUM",
+      "type": "FLOOD",
+      "description": "Comprehensive analysis of the hydrological situation in Siechnice during the June 2025 rise. Includes historical comparisons and risk assessment.",
+      "indices": {
+        "Status": "Stable",
+        "Last Update": "2025-06-10"
+      },
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Siechnice.pdf",
+      "is_general": true
+    },
+    {
+      "id": "wroclaw_general",
+      "title": "General Analysis: Wrocław",
+      "location": {
+        "lat": 51.1079,
+        "lng": 17.0385
+      },
+      "date": "2025-06-10",
+      "priority": "MEDIUM",
+      "type": "FLOOD",
+      "description": "Comprehensive analysis of the hydrological situation in Wrocław during the June 2025 rise. Includes historical comparisons and risk assessment.",
+      "indices": {
+        "Status": "Stable",
+        "Last Update": "2025-06-10"
+      },
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Wroclaw.pdf",
+      "is_general": true
+    },
+    {
+      "id": "za_opolem_general",
+      "title": "General Analysis: Za Opolem",
+      "location": {
+        "lat": 50.53,
+        "lng": 17.98
+      },
+      "date": "2025-06-10",
+      "priority": "MEDIUM",
+      "type": "FLOOD",
+      "description": "Comprehensive analysis of the hydrological situation in Za Opolem during the June 2025 rise. Includes historical comparisons and risk assessment.",
+      "indices": {
+        "Status": "Stable",
+        "Last Update": "2025-06-10"
+      },
+      "report_file": "https://raw.githubusercontent.com/ViadrusAI/ViadusAI-App/main/viadrus-app/src/data/RAPORT_Za_Opolem.pdf",
+      "is_general": true
     }
   ],
   "leak_detections": [

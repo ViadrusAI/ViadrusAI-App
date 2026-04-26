@@ -17,6 +17,7 @@ export interface AnalysisReport {
   indices: Record<string, string>;
   predictability?: string;
   report_file: string;
+  is_general?: boolean;
   leak_data?: LeakDetection;
 }
 

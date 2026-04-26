@@ -26,6 +26,14 @@ const reportIcon = L.divIcon({
   iconAnchor: [12, 12]
 });
 
+// Custom icon for general report pins
+const generalReportIcon = L.divIcon({
+  className: 'report-marker-icon',
+  html: '<div class="pin pin--general"></div><div class="pulse pulse--general"></div>',
+  iconSize: [24, 24],
+  iconAnchor: [12, 12]
+});
+
 // Custom icon for leak pins
 const leakIcon = L.divIcon({
   className: 'leak-marker-icon',
@@ -149,7 +157,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
           <Marker
             key={report.id}
             position={[report.location.lat, report.location.lng]}
-            icon={reportIcon}
+            icon={report.is_general ? generalReportIcon : reportIcon}
             eventHandlers={{
               click: () => onSelectReport(report),
             }}

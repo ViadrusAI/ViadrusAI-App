@@ -50,6 +50,15 @@
     .pulse--leak {
       background: rgba(167, 139, 250, 0.4) !important;
     }
+
+    .pin--general {
+      border-color: #ff4b2b !important;
+      box-shadow: 0 0 15px #ff4b2b !important;
+    }
+
+    .pulse--general {
+      background: rgba(255, 75, 43, 0.4) !important;
+    }
   }
 
   @keyframes pulse-marker {
