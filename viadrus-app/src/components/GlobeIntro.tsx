@@ -48,7 +48,7 @@ const GlobeIntro: React.FC<GlobeIntroProps> = ({ onComplete }) => {
           <div className="globe-intro__status-sep" />
           <div className="globe-intro__status-item">
             <span className="globe-intro__status-label">DATA</span>
-            <span className="globe-intro__status-val">SENTINEL-1/2</span>
+            <span className="globe-intro__status-val">SENTINEL-1/2, ERA5</span>
           </div>
         </div>
 

@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Random files, useful for dev
+prefetch-leaks-data.js
