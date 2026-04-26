@@ -67,7 +67,7 @@ const ReportSidePanel: React.FC<ReportSidePanelProps> = ({ report, onClose }) =>
 
         <section className="report-side-panel__actions">
           <a 
-            href={report.report_file.startsWith('http') ? report.report_file : `/src/data/${report.report_file}`} 
+            href={report.report_file} 
             target="_blank" 
             rel="noopener noreferrer"
             className="report-side-panel__link"
