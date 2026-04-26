@@ -170,6 +170,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
             key={report.id}
             position={[report.location.lat, report.location.lng]}
             icon={report.is_general ? generalReportIcon : reportIcon}
+            zIndexOffset={report.is_general ? 1000 : 500}
             eventHandlers={{
               click: () => onSelectReport(report),
             }}
@@ -189,6 +190,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
               key={leak.id}
               position={[leak.location.lat, leak.location.lng]}
               icon={leakIcon}
+              zIndexOffset={100}
               eventHandlers={{
                 click: () => correspondingReport && onSelectReport(correspondingReport),
               }}
