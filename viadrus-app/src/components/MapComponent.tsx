@@ -93,64 +93,76 @@ const MapComponent: React.FC<MapComponentProps> = ({
         })}
 
         {/* Voivodeships Layer */}
-        {layers.voivodeships && VOIVODESHIPS.map((v, idx) => (
-          <Polygon
-            key={`v-${idx}`}
-            positions={v.coords}
-            pathOptions={{
-              fillColor: v.risk === 'crit' ? '#ff4b2b' : v.risk === 'high' ? '#ffb400' : '#00d2ff',
-              fillOpacity: 0.1,
-              color: 'rgba(255,255,255,0.2)',
-              weight: 1
-            }}
-          >
-            <Popup>
-              <strong>{v.name}</strong><br/>
-              Risk: {v.risk}<br/>
-              Probability: {(v.prob * 100).toFixed(0)}%
-            </Popup>
-          </Polygon>
-        ))}
+        {layers.voivodeships && VOIVODESHIPS.map((v, idx) => {
+          const isMainRegion = v.name === 'Dolnośląskie' || v.name === 'Opolskie';
+          const fillColor = isMainRegion ? '#ffb400' : '#00d2ff';
+
+          return (
+            <Polygon
+              key={`v-${idx}`}
+              positions={v.coords}
+              pathOptions={{
+                fillColor: fillColor,
+                fillOpacity: isMainRegion ? 0.2 : 0.15,
+                color: isMainRegion ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.3)',
+                weight: isMainRegion ? 2 : 1
+              }}
+            >
+              <Popup>
+                <strong>{v.name}</strong>
+              </Popup>
+            </Polygon>
+          );
+        })}
 
         {/* Powiats Layer */}
-        {layers.powiats && POWIATS_GEO.map((p, idx) => (
-          <Polygon
-            key={`p-${idx}`}
-            positions={p.g as any}
-            pathOptions={{
-              fillColor: p.r === 'crit' ? '#ff4b2b' : p.r === 'high' ? '#ffb400' : '#00d2ff',
-              fillOpacity: 0.15,
-              color: 'rgba(255,255,255,0.3)',
-              weight: 1
-            }}
-          >
-            <Popup>
-              <strong>{p.n}</strong><br/>
-              Risk: {p.r}<br/>
-              Probability: {(p.p * 100).toFixed(0)}%
-            </Popup>
-          </Polygon>
-        ))}
+        {layers.powiats && POWIATS_GEO.map((p, idx) => {
+          const names = ['Wrocław', 'wrocławski', 'brzeski', 'opolski', 'krapkowicki'];
+          // Only mark as exception if name matches AND it's in the Oder region (West of 19°E)
+          const isException = names.includes(p.n) && p.c[1] < 19;
+          const fillColor = isException ? '#ffb400' : '#0066ff';
+
+          return (
+            <Polygon
+              key={`p-${idx}`}
+              positions={p.g as any}
+              pathOptions={{
+                fillColor: fillColor,
+                fillOpacity: isException ? 0.25 : 0.1,
+                color: isException ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)',
+                weight: isException ? 1.5 : 1
+              }}
+            >
+              <Popup>
+                <strong>{p.n}</strong>
+              </Popup>
+            </Polygon>
+          );
+        })}
 
         {/* Osiedla Layer */}
-        {layers.osiedla && OSIEDLA_WRO.map((o, idx) => (
-          <Polygon
-            key={`o-${idx}`}
-            positions={o.g as any}
-            pathOptions={{
-              fillColor: o.r === 'crit' ? '#ff4b2b' : o.r === 'high' ? '#ffb400' : '#00d2ff',
-              fillOpacity: 0.25,
-              color: 'rgba(255,255,255,0.4)',
-              weight: 1
-            }}
-          >
-            <Popup>
-              <strong>{o.n}</strong><br/>
-              Risk: {o.r}<br/>
-              Probability: {(o.p * 100).toFixed(0)}%
-            </Popup>
-          </Polygon>
-        ))}
+        {layers.osiedla && OSIEDLA_WRO.map((o, idx) => {
+          const names = ['Stare Miasto', 'Biskupin - Sępolno - Dąbie - Bartoszowice'];
+          const isMain = names.includes(o.n);
+          const fillColor = isMain ? '#ffb400' : '#0066ff';
+
+          return (
+            <Polygon
+              key={`o-${idx}`}
+              positions={o.g as any}
+              pathOptions={{
+                fillColor: fillColor,
+                fillOpacity: isMain ? 0.3 : 0.15,
+                color: isMain ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.3)',
+                weight: isMain ? 2 : 1
+              }}
+            >
+              <Popup>
+                <strong>{o.n}</strong>
+              </Popup>
+            </Polygon>
+          );
+        })}
 
         {/* Analysis Reports Pins */}
         {layers.reports && analysisReports.map((report) => (

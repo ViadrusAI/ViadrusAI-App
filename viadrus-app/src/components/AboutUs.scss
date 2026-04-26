@@ -19,7 +19,7 @@
 .about-us-modal {
   width: 100%;
   max-width: 1000px;
-  max-height: 85vh;
+  max-height: 85dvh;
   display: flex;
   flex-direction: column;
   animation: modal-appear 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -27,8 +27,8 @@
   border: 1px solid $glass-border;
 
   @media (max-width: $breakpoint-mobile) {
-    max-height: 100vh;
-    height: 100vh;
+    max-height: 100dvh;
+    height: 100dvh;
     border-radius: 0;
   }
 }
