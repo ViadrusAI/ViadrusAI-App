@@ -1,0 +1,25 @@
+// Colors
+$bg-deep: #050505;
+$accent: #00d2ff;
+$accent-glow: rgba(0, 210, 255, 0.4);
+$panel-bg: rgba(10, 10, 15, 0.85);
+$text-main: #e0e0e0;
+$text-dim: #999;
+$glass-border: rgba(255, 255, 255, 0.1);
+$danger: #ff4b2b;
+$warning: #ffb400;
+$safe: #00ff88;
+
+// Fonts
+$font-main: 'Inter', system-ui, -apple-system, sans-serif;
+
+// Transitions
+$transition-base: 0.3s ease;
+$transition-slow: 1.6s ease;
+
+// Effects
+$glass-blur: blur(12px);
+$panel-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+
+// Breakpoints
+$breakpoint-mobile: 768px;

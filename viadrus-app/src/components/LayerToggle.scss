@@ -1,0 +1,125 @@
+@use '../styles/variables' as *;
+
+.layer-toggle {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease;
+
+  &--collapsed {
+    padding-bottom: 24px;
+    gap: 0;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 16px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      .layer-toggle__title {
+        color: $accent;
+      }
+      .layer-toggle__icon {
+        color: $accent;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: $text-dim;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  &__icon {
+    color: $text-dim;
+    transition: transform 0.3s ease, color 0.2s;
+    display: flex;
+    align-items: center;
+
+    &--collapsed {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    transition: $transition-base;
+
+    &:hover {
+      .layer-toggle__label {
+        color: #fff;
+      }
+      .layer-toggle__slider {
+        border-color: rgba($accent, 0.5);
+      }
+    }
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + .layer-toggle__slider {
+      background: $accent;
+      border-color: $accent;
+      box-shadow: 0 0 10px $accent-glow;
+
+      &::after {
+        left: 18px;
+        background: $bg-deep;
+      }
+    }
+  }
+
+  &__slider {
+    position: relative;
+    width: 36px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid $glass-border;
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 14px;
+      height: 14px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: $transition-base;
+  }
+}

@@ -1,0 +1,31 @@
+@use '../styles/variables' as *;
+
+.sidebar {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  bottom: 20px;
+  width: 340px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: auto;
+  overflow-y: auto;
+
+  @media (max-width: $breakpoint-mobile) {
+    top: auto;
+    left: 10px;
+    right: 10px;
+    bottom: 24px; // Increased from 10px to make room for Leaflet attribution
+    width: auto;
+    max-height: 40vh;
+  }
+
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}

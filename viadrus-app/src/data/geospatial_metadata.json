@@ -1,0 +1,2471 @@
+{
+  "analysis_reports": [
+    {
+      "id": "brzeg_flood_2025_06_05",
+      "title": "#2 Overflow / Water Level Rise",
+      "location": {
+        "lat": 50.84,
+        "lng": 17.56
+      },
+      "date": "2025-06-05",
+      "priority": "HIGH",
+      "type": "FLOOD",
+      "description": "June rise of the Oder river. Elevated water levels causing flooding of floodplains west of Brzeg city center.",
+      "indices": {
+        "MNDWI": "+11%",
+        "NDWI": "+5%",
+        "NDVI": "-3%",
+        "SAR": "+5.9%"
+      },
+      "predictability": "HIGH (10 days before)",
+      "report_file": "RAPORT_Predykcja_Wylewow_Brzeg.pdf",
+      "leak_data": {
+        "id": "leak_brzeg_flood_2025_06_05",
+        "title": "Leak Analysis: #2 Overflow / Water Level Rise",
+        "location": {
+          "lat": 50.84,
+          "lng": 17.56
+        },
+        "date": "2026-04-25",
+        "sources": [
+          {
+            "source": {
+              "id": "NASA_POWER",
+              "name": "NASA POWER"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "GWETTOP",
+                "label": "GWETTOP",
+                "points": [
+                  {
+                    "date": "2026-04-11",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-12",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.4
+                  },
+                  {
+                    "date": "2026-04-14",
+                    "value": 0.4
+                  },
+                  {
+                    "date": "2026-04-15",
+                    "value": 0.42
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-17",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-18",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-20",
+                    "value": 0.56
+                  },
+                  {
+                    "date": "2026-04-21",
+                    "value": 0.52
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-23",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-24",
+                    "value": -999
+                  },
+                  {
+                    "date": "2026-04-25",
+                    "value": -999
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": {
+              "id": "ERA5_LAND"
+            },
+            "status": "error"
+          },
+          {
+            "source": {
+              "id": "SENTINEL_HUB",
+              "name": "Sentinel-1"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "S1_VV_ANOMALY_DB",
+                "label": "ΔVV anomaly (dB)",
+                "points": [
+                  {
+                    "date": "2026-04-10",
+                    "value": 0.48272586295120073
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.5991949244415802
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.6994399167899672
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.4774120422685568
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.6314229656382784
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "brzeg_culmination_2025_05_26",
+      "title": "#3 Spring Rise Culmination",
+      "location": {
+        "lat": 50.85,
+        "lng": 17.59
+      },
+      "date": "2025-05-26",
+      "priority": "HIGH",
+      "type": "FLOOD",
+      "description": "Highest average MNDWI z-score in the entire period (+1.88). Culmination of a 2-week series of water level increases.",
+      "indices": {
+        "MNDWI": "+7%",
+        "NDWI": "+4%",
+        "NDVI": "-1%",
+        "SAR": "+1.88"
+      },
+      "predictability": "HIGH (18 days before)",
+      "report_file": "RAPORT_Predykcja_Wylewow_Brzeg.pdf",
+      "leak_data": {
+        "id": "leak_brzeg_culmination_2025_05_26",
+        "title": "Leak Analysis: #3 Spring Rise Culmination",
+        "location": {
+          "lat": 50.85,
+          "lng": 17.59
+        },
+        "date": "2026-04-25",
+        "sources": [
+          {
+            "source": {
+              "id": "NASA_POWER",
+              "name": "NASA POWER"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "GWETTOP",
+                "label": "GWETTOP",
+                "points": [
+                  {
+                    "date": "2026-04-11",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-12",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.4
+                  },
+                  {
+                    "date": "2026-04-14",
+                    "value": 0.4
+                  },
+                  {
+                    "date": "2026-04-15",
+                    "value": 0.42
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-17",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-18",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-20",
+                    "value": 0.56
+                  },
+                  {
+                    "date": "2026-04-21",
+                    "value": 0.52
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-23",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-24",
+                    "value": -999
+                  },
+                  {
+                    "date": "2026-04-25",
+                    "value": -999
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": {
+              "id": "ERA5_LAND"
+            },
+            "status": "error"
+          },
+          {
+            "source": {
+              "id": "SENTINEL_HUB",
+              "name": "Sentinel-1"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "S1_VV_ANOMALY_DB",
+                "label": "ΔVV anomaly (dB)",
+                "points": [
+                  {
+                    "date": "2026-04-10",
+                    "value": 0.47647318046540904
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.4390555374466275
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.42957274818518465
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.35875655106010607
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.4226155864183608
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "siechnice_overflow_2025_06_05",
+      "title": "#1 Overflow / Terrain Inundation + Erosion",
+      "location": {
+        "lat": 51.0344,
+        "lng": 17.1879
+      },
+      "date": "2025-06-05",
+      "priority": "CRITICAL",
+      "type": "FLOOD",
+      "description": "Heavy rainfall caused overflows of local watercourses in the Siechnice region. Water flooded fields and meadows, carrying washed-away soil sediments.",
+      "indices": {
+        "MNDWI": "+33%",
+        "NDWI": "+14%",
+        "NDTI": "+3%",
+        "NDVI": "-7%",
+        "SAR": "+5.3%"
+      },
+      "predictability": "HIGH (10 days before)",
+      "report_file": "RAPORT_Predykcja_Wylewow_Siechnice.pdf",
+      "leak_data": {
+        "id": "leak_siechnice_overflow_2025_06_05",
+        "title": "Leak Analysis: #1 Overflow / Terrain Inundation + Erosion",
+        "location": {
+          "lat": 51.0344,
+          "lng": 17.1879
+        },
+        "date": "2026-04-25",
+        "sources": [
+          {
+            "source": {
+              "id": "NASA_POWER",
+              "name": "NASA POWER"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "GWETTOP",
+                "label": "GWETTOP",
+                "points": [
+                  {
+                    "date": "2026-04-11",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-12",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.4
+                  },
+                  {
+                    "date": "2026-04-14",
+                    "value": 0.4
+                  },
+                  {
+                    "date": "2026-04-15",
+                    "value": 0.42
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-17",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-18",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-20",
+                    "value": 0.56
+                  },
+                  {
+                    "date": "2026-04-21",
+                    "value": 0.52
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-23",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-24",
+                    "value": -999
+                  },
+                  {
+                    "date": "2026-04-25",
+                    "value": -999
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": {
+              "id": "ERA5_LAND"
+            },
+            "status": "error"
+          },
+          {
+            "source": {
+              "id": "SENTINEL_HUB",
+              "name": "Sentinel-1"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "S1_VV_ANOMALY_DB",
+                "label": "ΔVV anomaly (dB)",
+                "points": [
+                  {
+                    "date": "2026-04-10",
+                    "value": 0.536341237394601
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.6268451228892933
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.3885788200165054
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.679276662158583
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.345036260573148
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "siechnice_may_flood_2025_05_06",
+      "title": "#4 Extensive Overflow — Floodplains",
+      "location": {
+        "lat": 51.03,
+        "lng": 17.13
+      },
+      "date": "2025-05-06",
+      "priority": "HIGH",
+      "type": "FLOOD",
+      "description": "Spring rise (May). Elevated water levels in the Oder basin cause flooding of floodplains. Anomaly scale indicates a widespread hydrological event.",
+      "indices": {
+        "MNDWI": "+43%",
+        "NDWI": "+20%",
+        "NDMI": "+20%",
+        "NDVI": "-13%"
+      },
+      "predictability": "PARTIAL (48h before)",
+      "report_file": "RAPORT_Predykcja_Wylewow_Siechnice.pdf",
+      "leak_data": {
+        "id": "leak_siechnice_may_flood_2025_05_06",
+        "title": "Leak Analysis: #4 Extensive Overflow — Floodplains",
+        "location": {
+          "lat": 51.03,
+          "lng": 17.13
+        },
+        "date": "2026-04-25",
+        "sources": [
+          {
+            "source": {
+              "id": "NASA_POWER",
+              "name": "NASA POWER"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "GWETTOP",
+                "label": "GWETTOP",
+                "points": [
+                  {
+                    "date": "2026-04-11",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-12",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-14",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-15",
+                    "value": 0.46
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.47
+                  },
+                  {
+                    "date": "2026-04-17",
+                    "value": 0.48
+                  },
+                  {
+                    "date": "2026-04-18",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.51
+                  },
+                  {
+                    "date": "2026-04-20",
+                    "value": 0.59
+                  },
+                  {
+                    "date": "2026-04-21",
+                    "value": 0.56
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.49
+                  },
+                  {
+                    "date": "2026-04-23",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-24",
+                    "value": -999
+                  },
+                  {
+                    "date": "2026-04-25",
+                    "value": -999
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": {
+              "id": "ERA5_LAND"
+            },
+            "status": "error"
+          },
+          {
+            "source": {
+              "id": "SENTINEL_HUB",
+              "name": "Sentinel-1"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "S1_VV_ANOMALY_DB",
+                "label": "ΔVV anomaly (dB)",
+                "points": [
+                  {
+                    "date": "2026-04-10",
+                    "value": 0.39450620749675813
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.5999349414109912
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.39094709041107195
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.4015612015952489
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.3586747346958566
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "opole_flood_2025_05_31",
+      "title": "#1 May Overflow (Oder Rise)",
+      "location": {
+        "lat": 50.76,
+        "lng": 17.8
+      },
+      "date": "2025-05-31",
+      "priority": "HIGH",
+      "type": "FLOOD",
+      "description": "May rise of the Oder. Culmination of a 3-week series of water level increases. Flood wave reaches Opole from the upper Oder basin.",
+      "indices": {
+        "MNDWI": "+12%",
+        "NDWI": "+7%",
+        "NDVI": "-5%",
+        "SAR": "+6.1%"
+      },
+      "predictability": "HIGH (23 days before)",
+      "report_file": "RAPORT_Predykcja_Wylewow_Opole.pdf",
+      "leak_data": {
+        "id": "leak_opole_flood_2025_05_31",
+        "title": "Leak Analysis: #1 May Overflow (Oder Rise)",
+        "location": {
+          "lat": 50.76,
+          "lng": 17.8
+        },
+        "date": "2026-04-25",
+        "sources": [
+          {
+            "source": {
+              "id": "NASA_POWER",
+              "name": "NASA POWER"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "GWETTOP",
+                "label": "GWETTOP",
+                "points": [
+                  {
+                    "date": "2026-04-11",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-12",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.4
+                  },
+                  {
+                    "date": "2026-04-14",
+                    "value": 0.4
+                  },
+                  {
+                    "date": "2026-04-15",
+                    "value": 0.42
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-17",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-18",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-20",
+                    "value": 0.56
+                  },
+                  {
+                    "date": "2026-04-21",
+                    "value": 0.52
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-23",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-24",
+                    "value": -999
+                  },
+                  {
+                    "date": "2026-04-25",
+                    "value": -999
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": {
+              "id": "ERA5_LAND"
+            },
+            "status": "error"
+          },
+          {
+            "source": {
+              "id": "SENTINEL_HUB",
+              "name": "Sentinel-1"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "S1_VV_ANOMALY_DB",
+                "label": "ΔVV anomaly (dB)",
+                "points": [
+                  {
+                    "date": "2026-04-10",
+                    "value": 0.48836885057163987
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.6695781084742449
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.47999825016255687
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.3879258468636582
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.40471587338520043
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "opole_flood_wave_2025_06_05",
+      "title": "#2 Second Flood Wave",
+      "location": {
+        "lat": 50.76,
+        "lng": 17.8
+      },
+      "date": "2025-06-05",
+      "priority": "HIGH",
+      "type": "FLOOD",
+      "description": "Second flood wave or prolonged elevated state after the first overflow. Water remains on floodplains for at least 5 days.",
+      "indices": {
+        "MNDWI": "+11%",
+        "NDWI": "+6%",
+        "NDVI": "-4.5%",
+        "SAR": "+5.8%"
+      },
+      "predictability": "HIGH (8 days before)",
+      "report_file": "RAPORT_Predykcja_Wylewow_Opole.pdf",
+      "leak_data": {
+        "id": "leak_opole_flood_wave_2025_06_05",
+        "title": "Leak Analysis: #2 Second Flood Wave",
+        "location": {
+          "lat": 50.76,
+          "lng": 17.8
+        },
+        "date": "2026-04-25",
+        "sources": [
+          {
+            "source": {
+              "id": "NASA_POWER",
+              "name": "NASA POWER"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "GWETTOP",
+                "label": "GWETTOP",
+                "points": [
+                  {
+                    "date": "2026-04-11",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-12",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.4
+                  },
+                  {
+                    "date": "2026-04-14",
+                    "value": 0.4
+                  },
+                  {
+                    "date": "2026-04-15",
+                    "value": 0.42
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-17",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-18",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-20",
+                    "value": 0.56
+                  },
+                  {
+                    "date": "2026-04-21",
+                    "value": 0.52
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-23",
+                    "value": 0.41
+                  },
+                  {
+                    "date": "2026-04-24",
+                    "value": -999
+                  },
+                  {
+                    "date": "2026-04-25",
+                    "value": -999
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": {
+              "id": "ERA5_LAND"
+            },
+            "status": "error"
+          },
+          {
+            "source": {
+              "id": "SENTINEL_HUB",
+              "name": "Sentinel-1"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "S1_VV_ANOMALY_DB",
+                "label": "ΔVV anomaly (dB)",
+                "points": [
+                  {
+                    "date": "2026-04-10",
+                    "value": 0.301474403532342
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.6910691130424891
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.4098515862535225
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.3362206301018298
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.3167428187731109
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "za_opolem_first_wave_2025_05_26",
+      "title": "#1 First Overflow Wave",
+      "location": {
+        "lat": 50.54,
+        "lng": 17.96
+      },
+      "date": "2025-05-26",
+      "priority": "HIGH",
+      "type": "FLOOD",
+      "description": "First flood wave reaches the 'Za Opolem' section. Water begins to cover floodplains south of Opole. Start of a 4-week period of elevated water levels.",
+      "indices": {
+        "MNDWI": "+66%",
+        "NDWI": "+32%",
+        "NDVI": "-24.3%",
+        "SAR": "+9.9%"
+      },
+      "predictability": "HIGH (18 days before)",
+      "report_file": "RAPORT_Predykcja_Wylewow_Za_Opolem.pdf",
+      "leak_data": {
+        "id": "leak_za_opolem_first_wave_2025_05_26",
+        "title": "Leak Analysis: #1 First Overflow Wave",
+        "location": {
+          "lat": 50.54,
+          "lng": 17.96
+        },
+        "date": "2026-04-25",
+        "sources": [
+          {
+            "source": {
+              "id": "NASA_POWER",
+              "name": "NASA POWER"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "GWETTOP",
+                "label": "GWETTOP",
+                "points": [
+                  {
+                    "date": "2026-04-11",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-12",
+                    "value": 0.44
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-14",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-15",
+                    "value": 0.48
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.49
+                  },
+                  {
+                    "date": "2026-04-17",
+                    "value": 0.5
+                  },
+                  {
+                    "date": "2026-04-18",
+                    "value": 0.47
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.49
+                  },
+                  {
+                    "date": "2026-04-20",
+                    "value": 0.58
+                  },
+                  {
+                    "date": "2026-04-21",
+                    "value": 0.55
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.48
+                  },
+                  {
+                    "date": "2026-04-23",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-24",
+                    "value": -999
+                  },
+                  {
+                    "date": "2026-04-25",
+                    "value": -999
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": {
+              "id": "ERA5_LAND"
+            },
+            "status": "error"
+          },
+          {
+            "source": {
+              "id": "SENTINEL_HUB",
+              "name": "Sentinel-1"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "S1_VV_ANOMALY_DB",
+                "label": "ΔVV anomaly (dB)",
+                "points": [
+                  {
+                    "date": "2026-04-10",
+                    "value": 0.5220960415415846
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.41189988908516983
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.5285084418073349
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.6215510890658946
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.4385134233759153
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "za_opolem_culmination_2025_06_05",
+      "title": "#2 Massive Overflow Culmination",
+      "location": {
+        "lat": 50.58,
+        "lng": 17.95
+      },
+      "date": "2025-06-05",
+      "priority": "CRITICAL",
+      "type": "FLOOD",
+      "description": "Culmination of the flood wave in the 'Za Opolem' region. Strongest anomaly across all monitored areas on this day. Widespread inundation of floodplains.",
+      "indices": {
+        "MNDWI": "+71.2%",
+        "NDWI": "+38.1%",
+        "NDVI": "-21.6%",
+        "SAR": "+11.2%"
+      },
+      "predictability": "HIGH (10 days before)",
+      "report_file": "RAPORT_Predykcja_Wylewow_Za_Opolem.pdf",
+      "leak_data": {
+        "id": "leak_za_opolem_culmination_2025_06_05",
+        "title": "Leak Analysis: #2 Massive Overflow Culmination",
+        "location": {
+          "lat": 50.58,
+          "lng": 17.95
+        },
+        "date": "2026-04-25",
+        "sources": [
+          {
+            "source": {
+              "id": "NASA_POWER",
+              "name": "NASA POWER"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "GWETTOP",
+                "label": "GWETTOP",
+                "points": [
+                  {
+                    "date": "2026-04-11",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-12",
+                    "value": 0.44
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-14",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-15",
+                    "value": 0.48
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.49
+                  },
+                  {
+                    "date": "2026-04-17",
+                    "value": 0.5
+                  },
+                  {
+                    "date": "2026-04-18",
+                    "value": 0.47
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.49
+                  },
+                  {
+                    "date": "2026-04-20",
+                    "value": 0.58
+                  },
+                  {
+                    "date": "2026-04-21",
+                    "value": 0.55
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.48
+                  },
+                  {
+                    "date": "2026-04-23",
+                    "value": 0.43
+                  },
+                  {
+                    "date": "2026-04-24",
+                    "value": -999
+                  },
+                  {
+                    "date": "2026-04-25",
+                    "value": -999
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": {
+              "id": "ERA5_LAND"
+            },
+            "status": "error"
+          },
+          {
+            "source": {
+              "id": "SENTINEL_HUB",
+              "name": "Sentinel-1"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "S1_VV_ANOMALY_DB",
+                "label": "ΔVV anomaly (dB)",
+                "points": [
+                  {
+                    "date": "2026-04-10",
+                    "value": 0.6527384498476876
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.35688131395842027
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.32529982730536805
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.5642596538106985
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.5029164420068646
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "wroclaw_sim_overflow",
+      "title": "#5 Simulation: Local Urban Overflow",
+      "location": {
+        "lat": 51.112,
+        "lng": 17.088
+      },
+      "date": "2025-06-15",
+      "priority": "MEDIUM",
+      "type": "FLOOD",
+      "description": "Simulation of a local urban flood (storm sewer backflow or levee breach). Highlights the need for high-resolution (1m) data in urban environments to distinguish water from wet concrete.",
+      "indices": {
+        "MNDWI": "z > 3",
+        "STATUS": "DETECTED (1m resolution)"
+      },
+      "predictability": "EXPERIMENTAL",
+      "report_file": "RAPORT_Predykcja_Wylewow_Wroclaw.pdf",
+      "leak_data": {
+        "id": "leak_wroclaw_sim_overflow",
+        "title": "Leak Analysis: #5 Simulation: Local Urban Overflow",
+        "location": {
+          "lat": 51.112,
+          "lng": 17.088
+        },
+        "date": "2026-04-25",
+        "sources": [
+          {
+            "source": {
+              "id": "NASA_POWER",
+              "name": "NASA POWER"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "GWETTOP",
+                "label": "GWETTOP",
+                "points": [
+                  {
+                    "date": "2026-04-11",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-12",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-14",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-15",
+                    "value": 0.46
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.47
+                  },
+                  {
+                    "date": "2026-04-17",
+                    "value": 0.48
+                  },
+                  {
+                    "date": "2026-04-18",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.51
+                  },
+                  {
+                    "date": "2026-04-20",
+                    "value": 0.59
+                  },
+                  {
+                    "date": "2026-04-21",
+                    "value": 0.56
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.49
+                  },
+                  {
+                    "date": "2026-04-23",
+                    "value": 0.45
+                  },
+                  {
+                    "date": "2026-04-24",
+                    "value": -999
+                  },
+                  {
+                    "date": "2026-04-25",
+                    "value": -999
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": {
+              "id": "ERA5_LAND"
+            },
+            "status": "error"
+          },
+          {
+            "source": {
+              "id": "SENTINEL_HUB",
+              "name": "Sentinel-1"
+            },
+            "status": "ok",
+            "layers": [
+              {
+                "key": "S1_VV_ANOMALY_DB",
+                "label": "ΔVV anomaly (dB)",
+                "points": [
+                  {
+                    "date": "2026-04-10",
+                    "value": 0.5979541581686199
+                  },
+                  {
+                    "date": "2026-04-13",
+                    "value": 0.3374676780016232
+                  },
+                  {
+                    "date": "2026-04-16",
+                    "value": 0.6989028137221438
+                  },
+                  {
+                    "date": "2026-04-19",
+                    "value": 0.5708556782323344
+                  },
+                  {
+                    "date": "2026-04-22",
+                    "value": 0.43458490450179577
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "leak_detections": [
+    {
+      "id": "leak_brzeg_flood_2025_06_05",
+      "title": "Leak Analysis: #2 Overflow / Water Level Rise",
+      "location": {
+        "lat": 50.84,
+        "lng": 17.56
+      },
+      "date": "2026-04-25",
+      "sources": [
+        {
+          "source": {
+            "id": "NASA_POWER",
+            "name": "NASA POWER"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "GWETTOP",
+              "label": "GWETTOP",
+              "points": [
+                {
+                  "date": "2026-04-11",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-12",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.4
+                },
+                {
+                  "date": "2026-04-14",
+                  "value": 0.4
+                },
+                {
+                  "date": "2026-04-15",
+                  "value": 0.42
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-17",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-18",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-20",
+                  "value": 0.56
+                },
+                {
+                  "date": "2026-04-21",
+                  "value": 0.52
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-23",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-24",
+                  "value": -999
+                },
+                {
+                  "date": "2026-04-25",
+                  "value": -999
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "ERA5_LAND"
+          },
+          "status": "error"
+        },
+        {
+          "source": {
+            "id": "SENTINEL_HUB",
+            "name": "Sentinel-1"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "S1_VV_ANOMALY_DB",
+              "label": "ΔVV anomaly (dB)",
+              "points": [
+                {
+                  "date": "2026-04-10",
+                  "value": 0.48272586295120073
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.5991949244415802
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.6994399167899672
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.4774120422685568
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.6314229656382784
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leak_brzeg_culmination_2025_05_26",
+      "title": "Leak Analysis: #3 Spring Rise Culmination",
+      "location": {
+        "lat": 50.85,
+        "lng": 17.59
+      },
+      "date": "2026-04-25",
+      "sources": [
+        {
+          "source": {
+            "id": "NASA_POWER",
+            "name": "NASA POWER"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "GWETTOP",
+              "label": "GWETTOP",
+              "points": [
+                {
+                  "date": "2026-04-11",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-12",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.4
+                },
+                {
+                  "date": "2026-04-14",
+                  "value": 0.4
+                },
+                {
+                  "date": "2026-04-15",
+                  "value": 0.42
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-17",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-18",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-20",
+                  "value": 0.56
+                },
+                {
+                  "date": "2026-04-21",
+                  "value": 0.52
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-23",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-24",
+                  "value": -999
+                },
+                {
+                  "date": "2026-04-25",
+                  "value": -999
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "ERA5_LAND"
+          },
+          "status": "error"
+        },
+        {
+          "source": {
+            "id": "SENTINEL_HUB",
+            "name": "Sentinel-1"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "S1_VV_ANOMALY_DB",
+              "label": "ΔVV anomaly (dB)",
+              "points": [
+                {
+                  "date": "2026-04-10",
+                  "value": 0.47647318046540904
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.4390555374466275
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.42957274818518465
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.35875655106010607
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.4226155864183608
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leak_siechnice_overflow_2025_06_05",
+      "title": "Leak Analysis: #1 Overflow / Terrain Inundation + Erosion",
+      "location": {
+        "lat": 51.0344,
+        "lng": 17.1879
+      },
+      "date": "2026-04-25",
+      "sources": [
+        {
+          "source": {
+            "id": "NASA_POWER",
+            "name": "NASA POWER"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "GWETTOP",
+              "label": "GWETTOP",
+              "points": [
+                {
+                  "date": "2026-04-11",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-12",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.4
+                },
+                {
+                  "date": "2026-04-14",
+                  "value": 0.4
+                },
+                {
+                  "date": "2026-04-15",
+                  "value": 0.42
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-17",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-18",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-20",
+                  "value": 0.56
+                },
+                {
+                  "date": "2026-04-21",
+                  "value": 0.52
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-23",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-24",
+                  "value": -999
+                },
+                {
+                  "date": "2026-04-25",
+                  "value": -999
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "ERA5_LAND"
+          },
+          "status": "error"
+        },
+        {
+          "source": {
+            "id": "SENTINEL_HUB",
+            "name": "Sentinel-1"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "S1_VV_ANOMALY_DB",
+              "label": "ΔVV anomaly (dB)",
+              "points": [
+                {
+                  "date": "2026-04-10",
+                  "value": 0.536341237394601
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.6268451228892933
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.3885788200165054
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.679276662158583
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.345036260573148
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leak_siechnice_may_flood_2025_05_06",
+      "title": "Leak Analysis: #4 Extensive Overflow — Floodplains",
+      "location": {
+        "lat": 51.03,
+        "lng": 17.13
+      },
+      "date": "2026-04-25",
+      "sources": [
+        {
+          "source": {
+            "id": "NASA_POWER",
+            "name": "NASA POWER"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "GWETTOP",
+              "label": "GWETTOP",
+              "points": [
+                {
+                  "date": "2026-04-11",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-12",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-14",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-15",
+                  "value": 0.46
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.47
+                },
+                {
+                  "date": "2026-04-17",
+                  "value": 0.48
+                },
+                {
+                  "date": "2026-04-18",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.51
+                },
+                {
+                  "date": "2026-04-20",
+                  "value": 0.59
+                },
+                {
+                  "date": "2026-04-21",
+                  "value": 0.56
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.49
+                },
+                {
+                  "date": "2026-04-23",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-24",
+                  "value": -999
+                },
+                {
+                  "date": "2026-04-25",
+                  "value": -999
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "ERA5_LAND"
+          },
+          "status": "error"
+        },
+        {
+          "source": {
+            "id": "SENTINEL_HUB",
+            "name": "Sentinel-1"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "S1_VV_ANOMALY_DB",
+              "label": "ΔVV anomaly (dB)",
+              "points": [
+                {
+                  "date": "2026-04-10",
+                  "value": 0.39450620749675813
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.5999349414109912
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.39094709041107195
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.4015612015952489
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.3586747346958566
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leak_opole_flood_2025_05_31",
+      "title": "Leak Analysis: #1 May Overflow (Oder Rise)",
+      "location": {
+        "lat": 50.76,
+        "lng": 17.8
+      },
+      "date": "2026-04-25",
+      "sources": [
+        {
+          "source": {
+            "id": "NASA_POWER",
+            "name": "NASA POWER"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "GWETTOP",
+              "label": "GWETTOP",
+              "points": [
+                {
+                  "date": "2026-04-11",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-12",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.4
+                },
+                {
+                  "date": "2026-04-14",
+                  "value": 0.4
+                },
+                {
+                  "date": "2026-04-15",
+                  "value": 0.42
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-17",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-18",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-20",
+                  "value": 0.56
+                },
+                {
+                  "date": "2026-04-21",
+                  "value": 0.52
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-23",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-24",
+                  "value": -999
+                },
+                {
+                  "date": "2026-04-25",
+                  "value": -999
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "ERA5_LAND"
+          },
+          "status": "error"
+        },
+        {
+          "source": {
+            "id": "SENTINEL_HUB",
+            "name": "Sentinel-1"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "S1_VV_ANOMALY_DB",
+              "label": "ΔVV anomaly (dB)",
+              "points": [
+                {
+                  "date": "2026-04-10",
+                  "value": 0.48836885057163987
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.6695781084742449
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.47999825016255687
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.3879258468636582
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.40471587338520043
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leak_opole_flood_wave_2025_06_05",
+      "title": "Leak Analysis: #2 Second Flood Wave",
+      "location": {
+        "lat": 50.76,
+        "lng": 17.8
+      },
+      "date": "2026-04-25",
+      "sources": [
+        {
+          "source": {
+            "id": "NASA_POWER",
+            "name": "NASA POWER"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "GWETTOP",
+              "label": "GWETTOP",
+              "points": [
+                {
+                  "date": "2026-04-11",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-12",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.4
+                },
+                {
+                  "date": "2026-04-14",
+                  "value": 0.4
+                },
+                {
+                  "date": "2026-04-15",
+                  "value": 0.42
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-17",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-18",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-20",
+                  "value": 0.56
+                },
+                {
+                  "date": "2026-04-21",
+                  "value": 0.52
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-23",
+                  "value": 0.41
+                },
+                {
+                  "date": "2026-04-24",
+                  "value": -999
+                },
+                {
+                  "date": "2026-04-25",
+                  "value": -999
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "ERA5_LAND"
+          },
+          "status": "error"
+        },
+        {
+          "source": {
+            "id": "SENTINEL_HUB",
+            "name": "Sentinel-1"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "S1_VV_ANOMALY_DB",
+              "label": "ΔVV anomaly (dB)",
+              "points": [
+                {
+                  "date": "2026-04-10",
+                  "value": 0.301474403532342
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.6910691130424891
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.4098515862535225
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.3362206301018298
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.3167428187731109
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leak_za_opolem_first_wave_2025_05_26",
+      "title": "Leak Analysis: #1 First Overflow Wave",
+      "location": {
+        "lat": 50.54,
+        "lng": 17.96
+      },
+      "date": "2026-04-25",
+      "sources": [
+        {
+          "source": {
+            "id": "NASA_POWER",
+            "name": "NASA POWER"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "GWETTOP",
+              "label": "GWETTOP",
+              "points": [
+                {
+                  "date": "2026-04-11",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-12",
+                  "value": 0.44
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-14",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-15",
+                  "value": 0.48
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.49
+                },
+                {
+                  "date": "2026-04-17",
+                  "value": 0.5
+                },
+                {
+                  "date": "2026-04-18",
+                  "value": 0.47
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.49
+                },
+                {
+                  "date": "2026-04-20",
+                  "value": 0.58
+                },
+                {
+                  "date": "2026-04-21",
+                  "value": 0.55
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.48
+                },
+                {
+                  "date": "2026-04-23",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-24",
+                  "value": -999
+                },
+                {
+                  "date": "2026-04-25",
+                  "value": -999
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "ERA5_LAND"
+          },
+          "status": "error"
+        },
+        {
+          "source": {
+            "id": "SENTINEL_HUB",
+            "name": "Sentinel-1"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "S1_VV_ANOMALY_DB",
+              "label": "ΔVV anomaly (dB)",
+              "points": [
+                {
+                  "date": "2026-04-10",
+                  "value": 0.5220960415415846
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.41189988908516983
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.5285084418073349
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.6215510890658946
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.4385134233759153
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leak_za_opolem_culmination_2025_06_05",
+      "title": "Leak Analysis: #2 Massive Overflow Culmination",
+      "location": {
+        "lat": 50.58,
+        "lng": 17.95
+      },
+      "date": "2026-04-25",
+      "sources": [
+        {
+          "source": {
+            "id": "NASA_POWER",
+            "name": "NASA POWER"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "GWETTOP",
+              "label": "GWETTOP",
+              "points": [
+                {
+                  "date": "2026-04-11",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-12",
+                  "value": 0.44
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-14",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-15",
+                  "value": 0.48
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.49
+                },
+                {
+                  "date": "2026-04-17",
+                  "value": 0.5
+                },
+                {
+                  "date": "2026-04-18",
+                  "value": 0.47
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.49
+                },
+                {
+                  "date": "2026-04-20",
+                  "value": 0.58
+                },
+                {
+                  "date": "2026-04-21",
+                  "value": 0.55
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.48
+                },
+                {
+                  "date": "2026-04-23",
+                  "value": 0.43
+                },
+                {
+                  "date": "2026-04-24",
+                  "value": -999
+                },
+                {
+                  "date": "2026-04-25",
+                  "value": -999
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "ERA5_LAND"
+          },
+          "status": "error"
+        },
+        {
+          "source": {
+            "id": "SENTINEL_HUB",
+            "name": "Sentinel-1"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "S1_VV_ANOMALY_DB",
+              "label": "ΔVV anomaly (dB)",
+              "points": [
+                {
+                  "date": "2026-04-10",
+                  "value": 0.6527384498476876
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.35688131395842027
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.32529982730536805
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.5642596538106985
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.5029164420068646
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leak_wroclaw_sim_overflow",
+      "title": "Leak Analysis: #5 Simulation: Local Urban Overflow",
+      "location": {
+        "lat": 51.112,
+        "lng": 17.088
+      },
+      "date": "2026-04-25",
+      "sources": [
+        {
+          "source": {
+            "id": "NASA_POWER",
+            "name": "NASA POWER"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "GWETTOP",
+              "label": "GWETTOP",
+              "points": [
+                {
+                  "date": "2026-04-11",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-12",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-14",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-15",
+                  "value": 0.46
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.47
+                },
+                {
+                  "date": "2026-04-17",
+                  "value": 0.48
+                },
+                {
+                  "date": "2026-04-18",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.51
+                },
+                {
+                  "date": "2026-04-20",
+                  "value": 0.59
+                },
+                {
+                  "date": "2026-04-21",
+                  "value": 0.56
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.49
+                },
+                {
+                  "date": "2026-04-23",
+                  "value": 0.45
+                },
+                {
+                  "date": "2026-04-24",
+                  "value": -999
+                },
+                {
+                  "date": "2026-04-25",
+                  "value": -999
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "ERA5_LAND"
+          },
+          "status": "error"
+        },
+        {
+          "source": {
+            "id": "SENTINEL_HUB",
+            "name": "Sentinel-1"
+          },
+          "status": "ok",
+          "layers": [
+            {
+              "key": "S1_VV_ANOMALY_DB",
+              "label": "ΔVV anomaly (dB)",
+              "points": [
+                {
+                  "date": "2026-04-10",
+                  "value": 0.5979541581686199
+                },
+                {
+                  "date": "2026-04-13",
+                  "value": 0.3374676780016232
+                },
+                {
+                  "date": "2026-04-16",
+                  "value": 0.6989028137221438
+                },
+                {
+                  "date": "2026-04-19",
+                  "value": 0.5708556782323344
+                },
+                {
+                  "date": "2026-04-22",
+                  "value": 0.43458490450179577
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

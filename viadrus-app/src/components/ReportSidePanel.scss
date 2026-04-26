@@ -1,0 +1,227 @@
+@use '../styles/variables' as *;
+
+.report-side-panel {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100vh;
+  z-index: 2000;
+  transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  color: $text-main;
+  border-radius: 0;
+  border-left: 1px solid $glass-border;
+
+  @media (max-width: $breakpoint-mobile) {
+    right: -100vw;
+    width: 100vw;
+    border-left: none;
+  }
+
+  &--open {
+    right: 0;
+  }
+
+  &__header {
+    padding: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    
+    @media (max-width: $breakpoint-mobile) {
+      padding: 24px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: $transition-base;
+    z-index: 10;
+
+    &:hover {
+      opacity: 1;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  &__badge {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    &--priority-critical { 
+      background: rgba($danger, 0.15); 
+      color: $danger; 
+      border: 1px solid rgba($danger, 0.3);
+      box-shadow: 0 0 15px rgba($danger, 0.2);
+    }
+    &--priority-high { 
+      background: rgba($warning, 0.15); 
+      color: $warning; 
+      border: 1px solid rgba($warning, 0.3);
+    }
+    &--priority-medium { 
+      background: rgba(255, 255, 255, 0.1); 
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    &--prediction {
+      background: rgba($accent, 0.1);
+      color: $accent;
+      border: 1px solid rgba($accent, 0.3);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+  }
+
+  &__date {
+    margin: 8px 0 0;
+    font-size: 11px;
+    font-weight: 600;
+    color: $text-dim;
+    letter-spacing: 1px;
+  }
+
+  &__content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: 24px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+  }
+
+  &__section-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: $text-dim;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__indices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  &__index-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__index-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: $text-dim;
+  }
+
+  &__index-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: $accent;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px;
+    background: rgba($accent, 0.05);
+    border: 1px solid rgba($accent, 0.3);
+    color: $accent;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: $transition-base;
+
+    &:hover {
+      background: $accent;
+      color: $bg-deep;
+      box-shadow: 0 0 20px rgba($accent, 0.4);
+    }
+  }
+
+  &__footer {
+    padding: 32px;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.2);
+    letter-spacing: 0.5px;
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: 24px;
+    }
+
+    p { margin: 4px 0; }
+  }
+}
