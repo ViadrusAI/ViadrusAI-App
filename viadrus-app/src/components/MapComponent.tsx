@@ -117,7 +117,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
         {/* Powiats Layer */}
         {layers.powiats && POWIATS_GEO.map((p, idx) => {
-          const names = ['Wrocław', 'wrocławski', 'brzeski', 'opolski', 'krapkowicki'];
+          const names = ['Wrocław', 'wrocławski', 'brzeski', 'opolski', 'krapkowicki', 'wołowski'];
           // Only mark as exception if name matches AND it's in the Oder region (West of 19°E)
           const isException = names.includes(p.n) && p.c[1] < 19;
           const fillColor = isException ? '#ffb400' : '#0066ff';
@@ -142,7 +142,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
         {/* Osiedla Layer */}
         {layers.osiedla && OSIEDLA_WRO.map((o, idx) => {
-          const names = ['Stare Miasto', 'Biskupin - Sępolno - Dąbie - Bartoszowice'];
+          const names = ['Stare Miasto', 'Biskupin - Sępolno - Dąbie - Bartoszowice', 'Nadodrze'];
           const isMain = names.includes(o.n);
           const fillColor = isMain ? '#ffb400' : '#0066ff';
 
