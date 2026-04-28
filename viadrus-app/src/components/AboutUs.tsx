@@ -20,7 +20,9 @@ const CONTRIBUTORS: Contributor[] = [
   {
     name: "Michał Krupka",
     roles: ["Product Owner", "Frontend", "Backend"],
-    contact: {}
+    contact: {
+      linkedin: "https://www.linkedin.com/in/michal-krupka-1659313/"
+    }
   },
   {
     name: "Leszek Michalak",
@@ -46,7 +48,9 @@ const CONTRIBUTORS: Contributor[] = [
   {
     name: "Katarzyna Kapusta",
     roles: ["Python", "Front & Backend"],
-    contact: {}
+    contact: {
+      linkedin: "https://www.linkedin.com/in/katarzyna-kapusta-073bb3292/"
+    }
   },
   {
     name: "Marcin Derewońko",
