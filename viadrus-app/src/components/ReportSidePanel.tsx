@@ -23,7 +23,12 @@ const ReportSidePanel: React.FC<ReportSidePanelProps> = ({ report, onClose }) =>
   return (
     <div className={`report-side-panel glass-panel glass-panel--inner-glow ${report ? 'report-side-panel--open' : ''}`}>
       <div className="report-side-panel__header">
-        <button className="report-side-panel__close" onClick={onClose}>&times;</button>
+        <button className="report-side-panel__close" onClick={onClose} aria-label="Close panel">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
         <div className="report-side-panel__badges">
           <div className={`report-side-panel__badge report-side-panel__badge--${getPriorityClass(report.priority)}`}>
             {report.priority}
