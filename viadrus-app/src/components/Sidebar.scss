@@ -2,24 +2,31 @@
 
 .sidebar {
   position: absolute;
-  top: 80px;
-  left: 20px;
-  bottom: 20px;
-  width: 340px;
+  top: 40px;
+  left: -20px;
+  bottom: 0;
+  width: 420px; // 340 + 40 left + 40 right
   z-index: 100;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  pointer-events: auto;
+  padding: 40px;
+  pointer-events: none;
   overflow-y: auto;
+  overflow-x: hidden;
+
+  & > * {
+    pointer-events: auto;
+  }
 
   @media (max-width: $breakpoint-mobile) {
     top: auto;
-    left: 10px;
-    right: 10px;
-    bottom: 24px; // Increased from 10px to make room for Leaflet attribution
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: auto;
     max-height: 40dvh;
+    padding: 20px;
   }
 
   &::-webkit-scrollbar {

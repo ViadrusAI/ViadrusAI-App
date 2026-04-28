@@ -46,15 +46,24 @@
     background: none;
     border: none;
     color: #fff;
-    font-size: 32px;
     cursor: pointer;
     opacity: 0.4;
-    transition: $transition-base;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 10;
+    transform-origin: center;
+
+    svg {
+      width: 28px;
+      height: 28px;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     &:hover {
       opacity: 1;
-      transform: rotate(90deg);
+      
+      svg {
+        transform: rotate(90deg);
+      }
     }
   }
 
