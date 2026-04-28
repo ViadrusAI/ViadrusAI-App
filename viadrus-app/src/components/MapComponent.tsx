@@ -107,11 +107,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
                 color: isMainRegion ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.3)',
                 weight: isMainRegion ? 2 : 1
               }}
-            >
-              <Popup>
-                <strong>{v.name}</strong>
-              </Popup>
-            </Polygon>
+            />
           );
         })}
 
@@ -132,11 +128,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
                 color: isException ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)',
                 weight: isException ? 1.5 : 1
               }}
-            >
-              <Popup>
-                <strong>{p.n}</strong>
-              </Popup>
-            </Polygon>
+            />
           );
         })}
 
@@ -156,11 +148,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
                 color: isMain ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.3)',
                 weight: isMain ? 2 : 1
               }}
-            >
-              <Popup>
-                <strong>{o.n}</strong>
-              </Popup>
-            </Polygon>
+            />
           );
         })}
 
@@ -173,18 +161,39 @@ const MapComponent: React.FC<MapComponentProps> = ({
             zIndexOffset={report.is_general ? 1000 : 500}
             eventHandlers={{
               click: () => onSelectReport(report),
+              mouseover: (e) => e.target.openPopup(),
             }}
           >
-            <Popup className="report-mini-popup">
-              <strong>{report.title}</strong><br/>
-              Priority: {report.priority}
+            <Popup className="report-mini-popup" offset={[0, -10]}>
+              <div className="popup-content">
+                <div className="popup-header">
+                  <span className={`popup-badge popup-badge--priority-${report.priority.toLowerCase()}`}>
+                    {report.priority}
+                  </span>
+                </div>
+                <h3 className="popup-title">{report.title}</h3>
+                {report.report_file && (
+                  <div className="popup-actions">
+                    <a 
+                      href={report.report_file} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="popup-link"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                      Report PDF
+                    </a>
+                  </div>
+                )}
+              </div>
             </Popup>
           </Marker>
         ))}
 
         {/* Leak Detections Pins */}
         {layers.leaks && leakDetections.map((leak) => {
-          const correspondingReport = analysisReports.find(r => `leak_${r.id}` === leak.id);
+          const correspondingReport = analysisReports.find(r => `leak_${r.id}` === leak.id || r.id === leak.id.replace('leak_', ''));
           return (
             <Marker
               key={leak.id}
@@ -193,11 +202,30 @@ const MapComponent: React.FC<MapComponentProps> = ({
               zIndexOffset={100}
               eventHandlers={{
                 click: () => correspondingReport && onSelectReport(correspondingReport),
+                mouseover: (e) => e.target.openPopup(),
               }}
             >
-              <Popup className="report-mini-popup">
-                <strong>{leak.title}</strong><br/>
-                Date: {leak.date}
+              <Popup className="report-mini-popup" offset={[0, -10]}>
+                <div className="popup-content">
+                  <div className="popup-header">
+                    <span className="popup-badge popup-badge--leak">LEAK</span>
+                  </div>
+                  <h3 className="popup-title">{leak.title}</h3>
+                  {correspondingReport?.report_file && (
+                    <div className="popup-actions">
+                      <a 
+                        href={correspondingReport.report_file} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="popup-link"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Report PDF
+                      </a>
+                    </div>
+                  )}
+                </div>
               </Popup>
             </Marker>
           );
